@@ -32,7 +32,7 @@ In the code chunk above, I am creating a object y to store the density of the Se
 Below, I am plotting the object y, the density of the Sepal.Length column, on the x-axis
 
 ```{r}
-#|echo: FALSE
+#| echo: false
 
 plot(y)
 ```
