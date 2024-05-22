@@ -2,22 +2,22 @@
   {
     "objectID": "DataSciencePractice.html",
     "href": "DataSciencePractice.html",
-    "title": "Practice",
+    "title": "HW1 - Practice",
     "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+    "text": "∗ What do you think being a data scientist is about?\nData science can be broken down into engineering, analysis, and modeling/inference. I think most companies and modern usage of the term pertain to the engineering and analysis definitions.\n∗ What differences/similarities do you see between data scientists and statisticians?\nStatisticians use well-structured and clean data to do modeling and inference for the client. Data scientists are more focused on manipulating the data, but both groups use statistical analysis.\n∗ How do you view yourself in relation to these two areas?\nMy internship the past couple of years has been focused on statistical programming, which would probably be closer to the data scientist position. I am hoping to secure a position as a statistician in the future though, so that I can do more with modeling the data and inference."
   },
   {
-    "objectID": "DataSciencePractice.html#quarto",
-    "href": "DataSciencePractice.html#quarto",
-    "title": "Practice",
+    "objectID": "DataSciencePractice.html#questions",
+    "href": "DataSciencePractice.html#questions",
+    "title": "HW1 - Practice",
     "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+    "text": "∗ What do you think being a data scientist is about?\nData science can be broken down into engineering, analysis, and modeling/inference. I think most companies and modern usage of the term pertain to the engineering and analysis definitions.\n∗ What differences/similarities do you see between data scientists and statisticians?\nStatisticians use well-structured and clean data to do modeling and inference for the client. Data scientists are more focused on manipulating the data, but both groups use statistical analysis.\n∗ How do you view yourself in relation to these two areas?\nMy internship the past couple of years has been focused on statistical programming, which would probably be closer to the data scientist position. I am hoping to secure a position as a statistician in the future though, so that I can do more with modeling the data and inference."
   },
   {
-    "objectID": "DataSciencePractice.html#running-code",
-    "href": "DataSciencePractice.html#running-code",
-    "title": "Practice",
-    "section": "Running Code",
-    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
+    "objectID": "DataSciencePractice.html#code-chunks",
+    "href": "DataSciencePractice.html#code-chunks",
+    "title": "HW1 - Practice",
+    "section": "Code Chunks",
+    "text": "Code Chunks\n\ny &lt;- density(iris$Sepal.Length)\nclass(y)\n\n[1] \"density\"\n\ntypeof(y)\n\n[1] \"list\"\n\nstr(y)\n\nList of 7\n $ x        : num [1:512] 3.48 3.49 3.5 3.51 3.52 ...\n $ y        : num [1:512] 0.000232 0.000262 0.000296 0.000333 0.000373 ...\n $ bw       : num 0.274\n $ n        : int 150\n $ call     : language density.default(x = iris$Sepal.Length)\n $ data.name: chr \"iris$Sepal.Length\"\n $ has.na   : logi FALSE\n - attr(*, \"class\")= chr \"density\"\n\n\nIn the code chunk above, I am creating a object y to store the density of the Sepal.Length column of the iris dataset. Then I am displaying the class, type, and structure of this new object.\nBelow, I am plotting the object y, the density of the Sepal.Length column, on the x-axis\n\n#|echo: FALSE\n\nplot(y)"
   }
 ]

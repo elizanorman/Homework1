@@ -1,26 +1,38 @@
 ---
-title: "Practice"
+title: "HW1 - Practice"
 format: html
 editor: visual
 ---
 
-## Quarto
+## Questions
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+∗ What do you think being a data scientist is about?
 
-## Running Code
+Data science can be broken down into engineering, analysis, and modeling/inference. I think most companies and modern usage of the term pertain to the engineering and analysis definitions.
 
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+∗ What differences/similarities do you see between data scientists and statisticians?
+
+Statisticians use well-structured and clean data to do modeling and inference for the client. Data scientists are more focused on manipulating the data, but both groups use statistical analysis.
+
+∗ How do you view yourself in relation to these two areas?
+
+My internship the past couple of years has been focused on statistical programming, which would probably be closer to the data scientist position. I am hoping to secure a position as a statistician in the future though, so that I can do more with modeling the data and inference.
+
+## Code Chunks
 
 ```{r}
-1 + 1
+y <- density(iris$Sepal.Length)
+class(y)
+typeof(y)
+str(y)
 ```
 
-You can add options to executable code like this
+In the code chunk above, I am creating a object y to store the density of the Sepal.Length column of the iris dataset. Then I am displaying the class, type, and structure of this new object.
+
+Below, I am plotting the object y, the density of the Sepal.Length column, on the x-axis
 
 ```{r}
-#| echo: false
-2 * 2
-```
+#|echo: FALSE
 
-The `echo: false` option disables the printing of code (only output is displayed).
+plot(y)
+```
